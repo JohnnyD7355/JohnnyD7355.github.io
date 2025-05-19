@@ -21,7 +21,7 @@ export const About = () => {
                             <span 
                             key={key}
                             className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm 
-                            hover:bg-blue-500/20 hover:shadow-[0_2px_80x_rgba(59,130,2246,0.2)] transition">
+                            hover:bg-blue-500/20 hover:shadow-[0_2px_80x_rgba(59,130,246,0.2)] transition">
                                 {tech}
                             </span>
                         ))}
@@ -35,7 +35,7 @@ export const About = () => {
                             <span 
                             key={key}
                             className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm 
-                            hover:bg-blue-500/20 hover:shadow-[0_2px_80x_rgba(59,130,2246,0.2)] transition">
+                            hover:bg-blue-500/20 hover:shadow-[0_2px_80x_rgba(59,130,246,0.2)] transition">
                                 {tech}
                             </span>
                         ))}
@@ -48,14 +48,32 @@ export const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4"> Education</h3>
-            </div>
-            <ul>
+                <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                    <strong> Certified in HTML5 Application Development and JavaScript</strong>
+                    <strong> Certified in HTML5 Application Development and JavaScript</strong> - West-MEC Coding Program at the Central Campus 
+                    (2023-2025)
                 </li>
+                <li>
+                    Relevant Coursework: Application Development, Javascript, HTML, CSS, Tailwind, etc.
+                </li>
+                <ul>
+                
             </ul>
+            </ul>
+            </div>
+            
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4"> Work Experience</h3>
+                <div className="space-y-4 text-gray-300">
+                        <div>
+                            <h4 className="font-semibold">Freelance Photography (2023 - Present)</h4>
+                            <p>Scheduled and took photoshoots for clients. Colorgraded photos for different occasions ranging from marriage to graduation events.</p>
+                        </div>
+                          <div>
+                            <h4 className="font-semibold">Worship Team and Youth Group Member (2013 - Present)</h4>
+                            <p>Planned out holiday events and youth rallies for church. Served as a vocalist for Christ.</p>
+                        </div>
+                </div>
             </div>
             
         </div>
